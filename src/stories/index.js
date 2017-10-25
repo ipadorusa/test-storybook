@@ -19,15 +19,12 @@ import Centered from '@storybook/addon-centered';
 
 import MyButton from './Button.vue';
 import Welcome from './Welcome.vue';
-import App from '../App.vue';
+
 
 storiesOf('Welcome', module).add('Welcome', () => ({
   render: h => h(Welcome),
 }));
 
-storiesOf('App', module).add('App', () => ({
-  render: h => h(App),
-}));
 
 storiesOf('Button', module)
   .addDecorator(Centered)
